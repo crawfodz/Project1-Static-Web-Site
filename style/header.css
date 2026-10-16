@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    background-color: #780203;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header > a{
+    padding-left: 5%;
+    padding-top: 5px;
+}
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 80%;
+}
+.links a{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    transition: font-size 0.2s ease-in-out;
+}
+.links div{
+    width: 1px;
+    height: 50px;
+    background-color: black;
+}
+.links a:hover{
+    font-size: 20px;
+}

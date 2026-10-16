@@ -1,0 +1,47 @@
+.about-page{
+    min-height: 600px;
+    padding: 60px 10%;
+    box-sizing: border-box;
+    background-color: #302923;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/cob.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.about-title{
+    margin-bottom: 40px;
+}
+.about-title h4{
+    margin-bottom: 15px;
+}
+.about-title h1{
+    font-size: 60px;
+}
+.about-purpose{
+    padding: 30px;
+    background-color: rgb(209, 125, 29);
+    border-radius: 6px;
+}
+.about-purpose h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.about-purpose p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+/* This is the media querie for the different browser/screen sizes. */
+@media (max-width: 700px){
+    .about-page{
+        padding: 45px 7%;
+    }
+    .about-title h1{
+        font-size: 42px;
+    }
+    .about-purpose{
+        padding: 20px;
+    }
+}

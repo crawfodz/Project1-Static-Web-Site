@@ -1,0 +1,133 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6%;
+    min-height: 600px;
+    padding: 60px 10%;
+    box-sizing: border-box;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/cob.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.contact-text{
+    width: 52%;
+}
+.contact-text h4{
+    margin-bottom: 15px;
+}
+.contact-text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.contact-text p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.contact-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.contact-buttons a{
+    width: 130px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(209, 125, 29);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.contact-buttons a:hover,
+.contact-buttons a:focus-visible{
+    background-color: white;
+    color: rgb(209, 125, 29);
+}
+.contact-team{
+    width: 42%;
+    text-align: center;
+}
+.contact-team img{
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+.contact-team h4{
+    margin-top: 15px;
+    font-size: 20px;
+}
+/* Email form */
+.contact form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    padding: 25px;
+    background-color: rgb(209, 125, 29);
+    border-radius: 6px;
+}
+.contact form label{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #780203;
+    border-radius: 5px;
+    font: inherit;
+    color: black;
+    background-color: white;
+}
+.contact form textarea{
+    resize: vertical;
+    min-height: 120px;
+}
+.contact form input:focus,
+.contact form textarea:focus{
+    outline: 2px solid #780203;
+    outline-offset: 2px;
+}
+.contact form button{
+    align-self: flex-start;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #780203;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.contact form button:hover,
+.contact form button:focus-visible{
+    background-color: white;
+    color: #780203;
+}
+/* This is the media querie for the different browser/screen sizes. */
+@media (max-width: 700px){
+    .contact{
+        flex-direction: column;
+        gap: 35px;
+        padding: 45px 7%;
+    }
+    .contact-text,
+    .contact-team{
+        width: 100%;
+    }
+    .contact-text h1{
+        font-size: 42px;
+    }
+    .contact-buttons a{
+        width: calc(50% - 6px);
+    }
+}
